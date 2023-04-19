@@ -1,0 +1,86 @@
+/* tag */
+.tags
+  width: 100%
+  align-items: stretch
+  display: flex
+  flex-wrap: wrap
+  flex-direction: row
+  justify-content: flex-start
+  font-size: 1.1em
+  background-color #fff
+  &:hover
+    .archive-post-title 
+      color: $color-theme-main
+.tags-title-date
+  //min-width: 100px
+  border-style: solid
+  border-width: 1px
+  border-radius: 5px
+  border-color: #DCDEDD
+  justify-content: flex-start
+  flex-wrap: nowrap
+  padding: 0px 0px 0px 5px /* top | right | bottom | left */
+.tags-title 
+  font-family Gothic
+  margin-right auto
+.tags-date 
+  font-family: Merriweather
+  color $color-theme-main
+  font-weight: 1000
+  background-color $color-theme-secondary
+  border-radius 5px
+  padding 0px 5px 0px 5px
+  transition all .4s
+
+/*each tag's result shown in tags/ page */
+.tags-sections
+  display: flex
+  justify-content: space-between
+  row-gap: 30px /*row column*/
+  flex-wrap: wrap
+  margin 40px 2.5% 10px 2.5% /* top | right | bottom | left */
+  padding 30px 0 10px 0
+  line-height: 1
+  position relative
+  /*&:before
+      content ""
+      position absolute
+      top 15%
+      left 49.95%
+      right 49.95%
+      bottom 5%
+      transition all .3s
+      background-color $color-theme-main*/
+  &:after
+      content ""
+      position absolute
+      top 0
+      left 0%
+      right 0%
+      bottom 99.5%
+      transition all .3s
+      background-color $color-theme-main
+
+.tags-each
+  flex-basis 45%
+  /*
+  border-top-style: solid
+  border-width: 1px
+  border-radius: 5px
+  border-color: #DCDEDD
+  */
+  align-self: flex-start 
+.tags-each-title
+  font-size: 1.3em
+  margin: 10px 0px 10px 0px
+  font-family: Merriweather
+  text-align: left //center
+  color $color-theme-main
+  line-height: 1.5em
+  padding: 5px 5px
+  background-color: $color-theme-secondary
+  
+.tag-each-li
+  margin-bottom -2.5%
+  list-style: none
+  //list-style-position: inside
