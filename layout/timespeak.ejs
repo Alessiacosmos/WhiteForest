@@ -1,0 +1,26 @@
+
+<section class="archive-outer">
+    <section class="archive-inner">
+        <% var last; %>
+        <% for(var i=0; i<page.posts.length; i++) {%>
+            <% var post = page.posts[i]; %>
+            <% var year = post.date.getFullYear(); %>
+            <% if (last != year){ %>
+                <% if (last != null){ %>
+                <% } %>
+                <% last = year; %>
+                <div class="talks-name <%if(theme.style.animation.open==true){%>animate__animated  animate__fadeInUp<% } %>">
+                    <%=  year %>
+                </div>
+            <% } %>
+            <% var datep = post.date; %>
+            <div class="talks-post <%if(theme.style.animation.open==true){%>animate__animated  animate__fadeInUp<% } %>" >
+                <li class="talks-post-date" ><%=date(datep, "YYYY-MM-DD HH:mm:ss") %></li>
+                <div class="talks-post-content"><%-post.content%></div>
+            </div>
+            
+
+        <% } %>
+    </section>
+</section>
+

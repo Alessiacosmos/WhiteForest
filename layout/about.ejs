@@ -1,0 +1,41 @@
+<article class="post-inner">
+    <div class="post-content-outer">
+        <div class="post-intro">
+            <div class="post-title animate__animated  animate__fadeInUp">About ME</div>
+            <div class="meta-intro animate__animated  animate__fadeInUp">
+                <% var date_time = new Date(); %>
+                Today is: <%=full_date(date_time, 'YYYY-MM-DD') %> &emsp;
+              </div> <!--'MMM DD YYYY'-->
+            <%if(page.cover){%>
+                <div class="post-cover"><span class="lazyload-img-span"><img data-src="<%=page.cover%>" class="post-cover-img"></span></div>
+            <%}%>
+        </div>
+
+        <div class="post-content-inner">
+            <div class="post-content-inner-space"></div>
+            <div class="post-content-main animate__animated  animate__fadeInUp">
+                <div class="about-post-inner">
+                    <h1 class="about-section-title">Self-Introduction</h1>
+                    <div aling="center" class="about-img-container">
+                        <img class="about-img" src="<%=theme.intro.avator%>">
+                    </div>
+                    <div>
+                        I'm <font color="#427C5F"><strong>Foresttrd</strong></font> (of course a fake name).</br>
+                        A player, a reader, and a pessimist. </br>
+                        Love forest, love hiking, love cooking & eating, of course also the life (smaller). </br>
+                        Injured several times, easy to broke.</br>
+                    </div>
+                </div>
+                
+                <div class="about-post-inner">
+                    <h1 class="about-section-title">Analytics</h1>
+                    write something...
+                </div>
+                
+                </br></br>
+                <div></div>
+
+            </div>
+        </div>
+    </div>
+</article>
