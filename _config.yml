@@ -156,5 +156,8 @@ archive_tab_name: Blog
 #图片懒加载
 lazyload:
   open: true #是否开启
+
+# set github page
+url: https://alessiacosmos.github.io/hexo-theme-whiteforest/
   
 
